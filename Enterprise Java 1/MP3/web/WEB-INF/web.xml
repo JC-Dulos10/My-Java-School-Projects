@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name> SEG21-OL-CSELEC05-MP3-DULOS-JUANCARLOS </display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <description>Code A</description>
+    <param-name>salesCodeA</param-name>
+    <param-value>A</param-value>
+  </context-param>
+  <context-param>
+    <description>Code B</description>
+    <param-name>salesCodeB</param-name>
+    <param-value>B</param-value>
+  </context-param>
+  <context-param>
+    <description>Half of the sales amount</description>
+    <param-name>salesCodeAPercentage</param-name>
+    <param-value>0.50</param-value>
+  </context-param>
+  <context-param>
+    <description>175 bonus from sales code A</description>
+    <param-name>salesCodeABonus</param-name>
+    <param-value>175</param-value>
+  </context-param>
+  <context-param>
+    <description>20% of the sales amount</description>
+    <param-name>salesCodeBPercentage</param-name>
+    <param-value>0.20</param-value>
+  </context-param>
+  <context-param>
+    <description>100 bonus from sales code B</description>
+    <param-name>salesCodeBBonus</param-name>
+    <param-value>100</param-value>
+  </context-param>
+  <context-param>
+    <description>2500 value</description>
+    <param-name>amountGreaterThan</param-name>
+    <param-value>2500</param-value>
+  </context-param>
+  <context-param>
+    <description>Additional sales commission</description>
+    <param-name>additionalSales</param-name>
+    <param-value>0.05</param-value>
+  </context-param>
+  <context-param>
+    <description>Zero</description>
+    <param-name>zero</param-name>
+    <param-value>0</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>ComputeTakeHomePayServlet</servlet-name>
+    <servlet-class>controller.ComputeTakeHomePayServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DisplayViewServlet</servlet-name>
+    <servlet-class>view.DisplayViewServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ErrorPageServlet</servlet-name>
+    <servlet-class>view.ErrorPageServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteCookiesServlet</servlet-name>
+  	<servlet-class>controller.DeleteCookiesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ComputeTakeHomePayServlet</servlet-name>
+    <url-pattern>/computetakehomepay.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DisplayViewServlet</servlet-name>
+    <url-pattern>/display.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ErrorPageServlet</servlet-name>
+    <url-pattern>/error.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteCookiesServlet</servlet-name>
+  	<url-pattern>/clearcookies.action</url-pattern>
+  </servlet-mapping>
+  <error-page>
+    <exception-type>java.lang.NullPointerException</exception-type>
+    <location>/error.html?errCode=1</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/error.html?errCode=2</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error404.html</location>
+  </error-page>
+</web-app>

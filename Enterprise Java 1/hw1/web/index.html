@@ -1,0 +1,63 @@
+<meta charset="ISO-8859-1">
+<title>Take Home Pay Computation</title>
+</head>
+<body>
+	<h2>Take Home Pay Computation</h2>
+	<fieldset>
+		<legend>
+			Take Home Pay Compute Form
+		</legend>
+		 <form action="computeSales.action" method="post">
+		   <table>  	 
+		   	<tr>
+		   	 <td>
+		   	  <p>
+		       Enter Employee Id:
+		      </p>
+		   	 </td>
+		   	 <td>
+		   	 	<input type="text" name="id" size="15" required="required">
+		   	 </td>
+		   	</tr>
+		   	<tr>
+		   		<td>
+		   			<p>
+		     		Enter Employee Name:
+		      		</p>
+		   		</td>
+		   		<td>
+		   			<input type="text" name="name" size="35" required="required">
+		   		</td>
+		   	</tr>
+		   	<tr>
+		   		<td>
+		   			<p>
+		     			Select Sales Code:
+		     		</p>
+		   		</td>
+		   		<td>
+		   			<select name="salesCode" required="required">
+		      			<option value="A">A</option>
+		      			<option value="B">B</option>
+		      		</select>
+		   		</td>
+		   	</tr>
+		   	<tr>
+		   		<td>
+		   			<p>
+		     			Enter Sales Amount:
+		      		</p>
+		   		</td>
+		   		<td>
+		   			<input type="number" name="saleAmount" min="1"  required="required">
+		   		</td>
+		   	</tr>
+		   </table>
+		   <p>
+		     <input type=	"Submit" value="Compute Take Home Pay">&nbsp;&nbsp;&nbsp;
+		     <input type="reset">
+		   </p>
+		 </form>
+	</fieldset>
+</body>
+</html>

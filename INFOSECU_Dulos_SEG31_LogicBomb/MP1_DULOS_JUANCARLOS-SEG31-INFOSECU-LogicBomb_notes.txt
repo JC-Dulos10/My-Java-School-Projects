@@ -1,0 +1,11 @@
+Notes
+- import MP1_DULOS_JUANCARLOS-SEG31-INFOSECU-LogicBomb_DB.sql to the MySql database.
+- after the logic bomb was detonated just reimport
+
+Execution
+- change the date of your pc to December 25 2020
+- enter the library the user can still see the books inside but the database is already been deleted
+when the user enters again no books would be shown
+
+- All the data in the library will be deleted because the logic bomb has detonated.
+- The database in the MySQL was dropped when the bomb detonated

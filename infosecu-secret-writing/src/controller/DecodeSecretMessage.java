@@ -1,0 +1,14 @@
+package controller;
+
+public class DecodeSecretMessage {
+
+	public static void main(String[] args) {
+		
+		String decodedMessage = new utility.Security().decrypt("agh2C61LyreUUQi+AHhZcRi0KVNhaZMf+nqvhutaWMciHZ6H9qhVo518sL75Bm3XBckv4KAp/6vtJmPjYGsmB0GCjXmM0TBm4/zLY/AcVIch1VOqbDsqE8STawHkkay/3Uwb2jR7sQyo/MMmpB4Qey2NF6KrbCqX7yXYVbl0750IxKY4PYHhWlaOy3qlSycJcbBYGlu45GpSYReHYtuLqucB4dwZeBJRX7uUnu6TnBm9GphcLsBbGNLcDUxIB9wJWuaHa6vqOIixmNCwnKT6VF9/jltm3B03maaRsKXAYbWbbwkcH0XWSCC8yD0o5j0da3QzMjeimE2YEzy1dePr+lf9Oan3JUDJWN6mb+SAwonuB9jEBostC6MF1PFjcdK7i963+gBBQ/0e7btgyet3g8CTHoPyuWnlqCgbsTMITk5jSYORHMI6fjGzSdPBxrG9zlomWq3d3IyNbFmNSCSYotjItj5KYxcSWSzlc7mYJAPmAaQ2eVvmpkKFWU36eizXSKo5SiZ71sXNNObFCC7kkZyw/7XleTn/JgT95cudKeytDZFvsNG14OFPvZgvWzn+031reQF61yr7WE+gR/WllHpqFFHXBXT+4mwlXYzu1g6nZcCha6iPelquDzzyNjQUg+rLZVEchNIr01qb/gkpm2YULhdvPfC+DcxYTWQmVySKfF/ZQu2sQOFABT5GEeHMqFKK1FSTmzCgCPqnV5fW5yJx/YPH1DU3LJEXKOHiUQefrocaFSYd38cavS6HmjQ74K9WO1C8954ZnnfytMJEfwt9LIAt5uy4CQ5hMwKp/cY=\r\n" + 
+				"");
+		
+		System.out.println(decodedMessage);
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="search" method ="search" class="controller.UserActionServlet">
+			<result name="success">/display.jsp</result>
+		</action>	
+		
+		<action name="add" method="add" class="controller.UserActionServlet">
+			<result name="success">/ViewCart.jsp</result>
+		</action>
+		
+		<action name="remove" method="remove" class="controller.UserActionServlet">
+			<result name="success">/ViewCart.jsp</result>
+		</action>
+		
+		<action name="checkout" method="checkout" class="controller.UserActionServlet">
+			<result name="success">/receipt.jsp</result>
+			<result name="error">/errorInput.jsp</result>
+		</action>
+		
+		<action name="cancel" method="cancel" class="controller.UserActionServlet">
+			<result name="success">/index.jsp</result>
+		</action>
+		
+	</package>
+</struts>
